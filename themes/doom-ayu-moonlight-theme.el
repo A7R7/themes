@@ -59,14 +59,14 @@ Can be an integer to determine the exact padding."
    (dark-cyan     '("#86dffd" "#86dffd" "cyan"))
 
    ;; face categories -- required for all themes
-   (highlight      blue)
+   (highlight      yellow)
    (vertical-bar   base0)
    (line-highlight base4)
    (selection      region)
-   (builtin        orange)
+   (builtin        yellow)
    (comments       indigo)
    (doc-comments   (doom-lighten comments 0.25))
-   (constants      orange)
+   (constants      light-teal) ;; fixme
    (functions      blue)
    (keywords       orange)
    (methods        red)
@@ -232,7 +232,6 @@ Can be an integer to determine the exact padding."
    ((outline-6 &override) :foreground red)
    ((outline-7 &override) :foreground violet)
    ((org-block &override) :background base2)
-   ((org-document-title &override)   :foreground yellow)
    ((org-block-background &override) :background base2)
    ((org-block-begin-line &override) :background base2)
    ;;;; popup
