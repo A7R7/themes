@@ -234,7 +234,13 @@ Can be an integer to determine the exact padding."
    ((org-block &override) :background base2)
    ((org-block-background &override) :background base2)
    ((org-block-begin-line &override) :background base2)
-   ;;;; popup
+   ((org-table &override) :foreground fg)
+   (org-visual-indent-pipe-face
+    :foreground (doom-darken comments 0.4)
+    :background (doom-darken comments 0.4)
+    :height 0.1)
+
+;;;; popup
    (popup-face :inherit 'tooltip)
    (popup-selection-face :inherit 'tooltip)
    ;;;; pos-tip
@@ -259,7 +265,9 @@ Can be an integer to determine the exact padding."
    (which-key-command-description-face :foreground fg)
    (which-key-group-description-face :foreground magenta)
    (which-key-local-map-description-face :foreground cyan)
-   ;;;; sort-tabs
+   (which-key-posframe-border :background grey)
+   (transient-posframe-border :background grey)
+;;;; sort-tabs
    (sort-tab-other-tab-face :foreground indigo)
    (sort-tab-current-tab-face :foreground fg :background base4 :bold t)
    (sort-tab-separator-face :foreground base4)
