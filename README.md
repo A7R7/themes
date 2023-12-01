@@ -1,3 +1,18 @@
+# What this fork does
+
+Added one theme: doom-ayu-moonlight.
+
+It is a hybrid of doom-ayu-mirage and doom-moonlight.
+
+I'm not planning to merge this theme into the official branch, because it is still in development. Meanwhile, I added some personal stuffs inside it (colors for plugins I'm using, etc).
+
+Screenshot:
+
+![doom-ayu-moonlight](./doom-ayu-moonlight.png)
+
+
+------
+
 ![Release tag](https://img.shields.io/github/tag/doomemacs/themes.svg?label=release&style=flat-square)
 [![MELPA](http://melpa.org/packages/doom-themes-badge.svg?style=flat-square)](http://melpa.org/#/doom-themes)
 ![Build status](https://img.shields.io/github/workflow/status/doomemacs/themes/CI/master?style=flat-square)
