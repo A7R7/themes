@@ -240,7 +240,7 @@ Can be an integer to determine the exact padding."
     :background (doom-darken comments 0.4)
     :height 0.1)
 
-;;;; popup
+   ;;;; popup
    (popup-face :inherit 'tooltip)
    (popup-selection-face :inherit 'tooltip)
    ;;;; pos-tip
@@ -267,10 +267,15 @@ Can be an integer to determine the exact padding."
    (which-key-local-map-description-face :foreground cyan)
    (which-key-posframe-border :background grey)
    (transient-posframe-border :background grey)
-;;;; sort-tabs
+   ;;;; sort-tabs
    (sort-tab-other-tab-face :foreground indigo)
    (sort-tab-current-tab-face :foreground fg :background base4 :bold t)
    (sort-tab-separator-face :foreground base4)
-	 ;;;; olivetti
+   ;;;; olivetti
    (olivetti-fringe :background bg-alt)
+   ;;;; telega
+   (telega-msg-heading :background bg)
+   (telega-msg-user-title :foreground orange)
+   (telega-msg-self-title :foreground orange)
+
 ))
