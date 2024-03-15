@@ -18,20 +18,20 @@ Can be an integer to determine the exact padding."
 
   ;; name        default   256       16
   (
-   (bg         '("#1C1F3B" "#1C1F3B" "black"))
+   (bg         '("#212445" "#212445" "black"))
    (bg-alt     '("#11142c" "#11142c" "black"))
    (base0      '("#161a2a" "#161a2a" "black"))
-   (base1      '("#191a2a" "#191a2a" "brightblack"))
-   (base2      '("#1e2030" "#1e2030" "brightblack"))
-   (base3      '("#222436" "#222436" "brightblack"))
-   (base4      '("#2f334d" "#2f334d" "brightblack"))
-   (base5      '("#444a73" "#444a73" "brightblack"))
-   (base6      '("#828bb8" "#828bb8" "brightblack"))
-   (base7      '("#a9b8e8" "#a9b8e8" "brightblack"))
+   (base1      '("#11142c" "#11142c" "brightblack"))
+   (base2      '("#181B3A" "#181B3A" "brightblack"))
+   (base3      '("#212445" "#212445" "brightblack"))
+   (base4      '("#2F3665" "#2F3665" "brightblack"))
+   (base5      '("#404D87" "#404D87" "brightblack"))
+   (base6      '("#828EC4" "#828EC4" "brightblack"))
+   (base7      '("#A1AAD3" "#A1AAD3" "brightblack"))
    (base8      '("#b4c2f0" "#b4c2f0" "white"))
    (indigo     '("#7a88cf" "#7a88cf" "brightblack"))
    (region     '("#383e5c" "#383e5c" "brightblack"))
-   (fg         '("#d0d8f0" "#d0d8f0" "brightwhite"))
+   (fg         '("#D8DFF3" "#D8DFF3" "brightwhite"))
    (fg-alt     '("#b4c2f0" "#b4c2f0" "white"))
 
    (grey base5)
@@ -73,7 +73,7 @@ Can be an integer to determine the exact padding."
    (operators      dark-cyan)
    (type           yellow)
    (strings        green)
-   (variables      light-red)
+   (variables      teal)
    (numbers        orange)
    (region         region)
    (error          red)
@@ -97,10 +97,11 @@ Can be an integer to determine the exact padding."
   ;;;; Base theme face overrides
   ((font-lock-keyword-face :foreground keywords)
    (font-lock-comment-face :foreground comments)
+   (font-lock-variable-use-face :foreground variables)
    (font-lock-doc-face :foreground doc-comments)
    (hl-line :background line-highlight)
    (lazy-highlight :background base4 :foreground fg)
-   ((line-number &override) :foreground base5 :background (doom-darken bg 0.06))
+   ((line-number &override) :foreground base5 :background bg-alt)
    ((line-number-current-line &override) :foreground fg :background line-highlight)
    (mode-line
     :background modeline-bg :foreground modeline-fg
@@ -171,7 +172,7 @@ Can be an integer to determine the exact padding."
    (doom-modeline-icon-inactive     :foreground indigo)
    (doom-modeline-evil-normal-state :foreground dark-cyan)
    (doom-modeline-evil-insert-state :foreground blue)
-   (doom-modeline-project-dir       :foreground light-teal)
+   (doom-modeline-project-dir       :foreground teal)
    (doom-modeline-buffer-path       :foreground blue)
    (doom-modeline-buffer-modified :inherit 'bold :foreground yellow)
    (doom-modeline-buffer-major-mode :inherit 'doom-modeline-buffer-path)
@@ -226,7 +227,7 @@ Can be an integer to determine the exact padding."
    ;;;; org <built-in>
    ((outline-1 &override) :foreground light-blue-2)
    ((outline-2 &override) :foreground dark-cyan)
-   ((outline-3 &override) :foreground light-red)
+   ((outline-3 &override) :foreground teal)
    ((outline-4 &override) :foreground blue)
    ((outline-5 &override) :foreground magenta)
    ((outline-6 &override) :foreground red)
@@ -269,7 +270,7 @@ Can be an integer to determine the exact padding."
    (transient-posframe-border :background grey)
    ;;;; sort-tabs
    (sort-tab-other-tab-face :foreground indigo)
-   (sort-tab-current-tab-face :foreground fg :background base4 :bold t)
+   (sort-tab-current-tab-face :foreground fg :background bg-alt :bold t)
    (sort-tab-separator-face :foreground base4)
    ;;;; olivetti
    (olivetti-fringe :background bg-alt)
